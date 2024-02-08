@@ -26,10 +26,29 @@ class _HomeViewState extends State<HomeView> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          // Assets.icons.icLove.svg(
-          //   package: 'gen',
-          // ),
-
+          Text(''.ext.version),
+          Text(
+            'burak',
+            style: context.general.textTheme.titleLarge?.copyWith(
+              color: 'fcb103'.ext.color,
+            ),
+          ),
+          SizedBox(
+            height: context.sized.dynamicHeight(0.4),
+          ),
+          // Future<String>().ext.toBuild(
+          //     onSuccess: onSuccess,
+          //     loadingWidget: loadingWidget,
+          //     notFoundWidget: notFoundWidget,
+          //     onError: onError),
+          FloatingActionButton(
+            onPressed: () {
+              // 'Kartal'.ext.launchMaps();
+              // CustomLinkPreview.getLinkPreviewData('www.google.com');
+              // CustomLogger.showError<String>('object');
+            },
+            child: const Text('EN'),
+          ),
           const ProjectNetworkImage(
             url: 'https://picsum.photos/250?image=9',
           ),
